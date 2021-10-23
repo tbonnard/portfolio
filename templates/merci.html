@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Merci!{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+<h1>Merci pour votre message!</h1>
+<p>Je vous repondrai dans les plus brefs délais</p>
+
+<a href="{{url_for('home') }}" type="button" class="btn btn-md redirect_button">Accueil</a>
+</div>
+{% endblock  %}
+

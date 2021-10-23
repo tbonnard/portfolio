@@ -1,0 +1,302 @@
+{% extends "base.html" %}
+
+{% block title %}Thibaud Bonnard{% endblock %}
+
+{% block content %}
+
+    <section id='top'>
+
+<!-- navigation -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- <a class="navbar-brand title_color" href="">T.B.</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#techno">Technologies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projets">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+<!-- row -->
+
+      <div class="container-fluid ">
+        <div class="row presentation">
+            <div class="col-lg-6">
+                <h1>Bonjour! Je suis Thibaud,</h1>
+                <h5>développeur de logiciels web<br>et anciennement analyste d'affaires/fonctionnel web et CRM</h5>
+                <a href="#projets" type="button" class="btn btn-md redirect_button">Voir les projets</a>
+                <a href="#contact" type="button" class="btn btn-light btn-md redirect_button_b">Me contacter</a>
+            </div>
+            <div class="col-lg-6">
+                <img class='avatar' src="{{ url_for('static', filename='img/avatar.svg')}}" alt="Thibaud Bonnard">
+            </div>
+        </div>
+
+        <div class="scroll_down">
+          <a href="#about"><i class="fas fa-angle-down fa-2x"></i></a>
+        </div>
+
+      </div>
+  </section>
+
+
+
+<!-- about me -->
+
+
+<section id='about'>
+  <div class="container-fluid">
+    <h2 class="section_heading">À propos de moi</h2>
+    <p>Travaillant depuis plus de 10 ans sur des projets numériques en tant qu'analyste d'affaires et fonctionnel, mais aimant la compréhension d'une fonctionnalité, sa logique ou encore la reflexion d'une solution optimale, j'ai toujours voulu passer du côté développement.
+      <br>
+      J’ai ainsi suivi des formations en computer science, python et JavaScript et suis actuellement disponible à vous rejoindre!</p>
+  </div>
+</section>
+
+
+
+</section>
+<!-- toolkit -->
+  <section id='techno'>
+    <div class="container-fluid">
+        <h2 class="section_heading">Technologies</h2>
+
+    <div class="row presentation">
+
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
+          <p>Flask / Django</p>
+        </div>
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
+          <p>Javascript</p>
+        </div>
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/git.png')}}" alt="git"/>
+          <p>Git / GitHub</p>
+        </div>
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/html5.png')}}" alt="html5"/>
+          <p>HTML5</p>
+        </div>
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+          <p>CSS3</p>
+        </div>
+        <div class="col-md-3 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/database.png')}}" alt="database"/>
+          <p>SQL</p>
+        </div>
+    </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- projects -->
+    <section id='projets'>
+      <div class="container-fluid">
+
+          <h2 class="section_heading">Quelques projets</h2>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 project_item">
+            <div class="card">
+                <a href="https://amztrackerprice.herokuapp.com/" target="_blank">
+                <img src="{{ url_for('static', filename='img/tracker.png')}}" class="card-img-top" alt="tracker"></a>
+              <div class="card-body">
+                  <a href="https://blog-thib.herokuapp.com" target="_blank">
+                 <h4 class="card-title">Tracker de prix Amazon</h4>
+                  </a>
+                  <p class="card-text">Recevoir une notification <i>(email)</i> si le prix d'un produit passe en dessous d'un prix fixé par l'utilisateur</p>
+              </div>
+                <div class="tech_icons">
+                  <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
+                  <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                  <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                </div>
+              </div>
+          </div>
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://blog-thib.herokuapp.com" target="_blank">
+                  <img src="{{ url_for('static', filename='img/blog.png')}}" class="card-img-top" alt="blog"></a>
+                <div class="card-body">
+                    <a href="https://blog-thib.herokuapp.com" target="_blank">
+                   <h4 class="card-title">Blog</h4>
+                    </a>
+                    <p class="card-text">Exemple d'un blog crée avec Flask</p>
+                </div>
+                  <div class="tech_icons">
+                    <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://tbonnard.github.io/todo/" target="_blank">
+                  <img src="{{ url_for('static', filename='img/todo.png')}}" class="card-img-top" alt="todo"></a>
+                <div class="card-body">
+                    <a href="https://finapps.pythonanywhere.com/" target="_blank">
+                    <h4 class="card-title">To Do app</h4></a>
+                    <p class="card-text">Application web listant ses To Dos, en local, par projets</p>
+                </div>
+                  <div class="tech_icons">
+                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://github.com/tbonnard/password_manager" target="_blank">
+                  <img src="{{ url_for('static', filename='img/pwd.png')}}" class="card-img-top" alt="password"></a>
+                <div class="card-body">
+                    <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
+                        <h4 class="card-title">Gestionnaire de mots de passe</h4></a>
+                    <p class="card-text">Application de gestion et génération de mots de passe en local encryptés</p>
+                </div>
+                  <div class="tech_icons">
+                    <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://finapps.pythonanywhere.com/" target="_blank">
+                  <img src="{{ url_for('static', filename='img/finapps.png')}}" class="card-img-top" alt="finapps"></a>
+                <div class="card-body">
+                    <a href="https://finapps.pythonanywhere.com/" target="_blank">
+                    <h4 class="card-title">Finapps</h4></a>
+                    <p class="card-text">Exemple de portefeuille boursiers</p>
+                </div>
+                  <div class="tech_icons">
+                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
+                  <img src="{{ url_for('static', filename='img/etch.png')}}" class="card-img-top" alt="etch"></a>
+                <div class="card-body">
+                    <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
+                        <h4 class="card-title">Etch a Sketch!</h4></a>
+                    <p class="card-text">Version web du jeu de l'écran magique</p>
+                </div>
+                  <div class="tech_icons">
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://tbonnard.github.io/Calculator/" target="_blank">
+                  <img src="{{ url_for('static', filename='img/calculator.png')}}" class="card-img-top" alt="calculator"></a>
+                <div class="card-body">
+                    <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
+                        <h4 class="card-title">Calculatrice</h4></a>
+                    <p class="card-text">Calculatrice en ligne</p>
+                </div>
+                  <div class="tech_icons">
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 project_item">
+              <div class="card">
+                  <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
+                  <img src="{{ url_for('static', filename='img/tic.png')}}" class="card-img-top" alt="tic-tac-toe"></a>
+                <div class="card-body">
+                    <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
+                    <h4 class="card-title">Tic Tac Toe</h4></a>
+                    <p class="card-text">Jeu Tic Tac Toe en JS pour 2 joueurs</p>
+                </div>
+                  <div class="tech_icons">
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+
+
+<!-- contact -->
+  <section id='contact'>
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-4 contact_text">
+                <h2>Me contacter</h2>
+                <p>Si vous souhaitez en connaitre d'avantage sur mon pacours, n'hésitez pas à me contacter par l'un des moyens suivants!</p>
+                <a href="https://www.linkedin.com/in/thibaudbonnard/" target="_blank"><i class="fab fa-linkedin fa-2x icon_contact"></i></a>
+                <a href="https://github.com/tbonnard" target="_blank"><i class="fab fa-github fa-2x icon_contact"></i></a>
+            </div>
+
+            <div class="col-lg-8">
+                <form method="POST" action="{{url_for('home')}}">
+                    {{ form.csrf_token }}
+                    {{ form.name }}
+                    {{ form.email }}
+                    {{ form.message }}
+                    <div class="submit_button">
+                    {{ form.submit }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+      <p class="footer_text">Fait par Thibaud Bonnard</p>
+  </footer>
+
+{% endblock %}
