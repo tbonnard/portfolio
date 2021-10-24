@@ -35,7 +35,7 @@
         <div class="row presentation">
             <div class="col-lg-6">
                 <h1>Bonjour! Je suis Thibaud,</h1>
-                <h5>développeur de logiciels web<br>et anciennement analyste d'affaires/fonctionnel web et CRM</h5>
+                <h3>développeur de logiciels web<br>et anciennement analyste d'affaires/fonctionnel web et CRM</h3>
                 <a href="#projets" type="button" class="btn btn-md redirect_button">Voir les projets</a>
                 <a href="#contact" type="button" class="btn btn-light btn-md redirect_button_b">Me contacter</a>
             </div>
@@ -75,28 +75,28 @@
 
     <div class="row presentation">
 
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
-          <p>Flask / Django</p>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
+          <p>Python (Flask / Django)</p>
         </div>
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
           <p>Javascript</p>
         </div>
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/git.png')}}" alt="git"/>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/git.png')}}" alt="git" title="git"/>
           <p>Git / GitHub</p>
         </div>
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/html5.png')}}" alt="html5"/>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/html5.png')}}" alt="html5" title="hmlt5"/>
           <p>HTML5</p>
         </div>
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
           <p>CSS3</p>
         </div>
-        <div class="col-md-3 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/database.png')}}" alt="database"/>
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/database.png')}}" alt="sql" title="sql"/>
           <p>SQL</p>
         </div>
     </div>
@@ -121,14 +121,15 @@
                 <img src="{{ url_for('static', filename='img/tracker.png')}}" class="card-img-top" alt="tracker"></a>
               <div class="card-body">
                   <a href="https://blog-thib.herokuapp.com" target="_blank">
-                 <h4 class="card-title">Tracker de prix Amazon</h4>
+                 <h3 class="card-title">Tracker de prix Amazon</h3>
                   </a>
-                  <p class="card-text">Recevoir une notification <i>(email)</i> si le prix d'un produit passe en dessous d'un prix fixé par l'utilisateur</p>
+                  <p class="card-text">Recevoir une notification si le prix d'un produit descend sous prix fixé par l'utilisateur</p>
               </div>
                 <div class="tech_icons">
-                  <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
-                  <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                  <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                  <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
+                  <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="flask" title="flask"/>
+                  <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                  <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                 </div>
               </div>
           </div>
@@ -139,14 +140,15 @@
                   <img src="{{ url_for('static', filename='img/blog.png')}}" class="card-img-top" alt="blog"></a>
                 <div class="card-body">
                     <a href="https://blog-thib.herokuapp.com" target="_blank">
-                   <h4 class="card-title">Blog</h4>
+                   <h3 class="card-title">Blog</h3>
                     </a>
                     <p class="card-text">Exemple d'un blog crée avec Flask</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/python.png')}}" alt="python"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                    <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
+                    <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="flask" title="flask"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
                 </div>
             </div>
@@ -157,14 +159,13 @@
                   <img src="{{ url_for('static', filename='img/todo.png')}}" class="card-img-top" alt="todo"></a>
                 <div class="card-body">
                     <a href="https://finapps.pythonanywhere.com/" target="_blank">
-                    <h4 class="card-title">To Do app</h4></a>
+                    <h3 class="card-title">To Do app</h3></a>
                     <p class="card-text">Application web listant ses To Dos, en local, par projets</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
               </div>
             </div>
@@ -176,11 +177,11 @@
                   <img src="{{ url_for('static', filename='img/pwd.png')}}" class="card-img-top" alt="password"></a>
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
-                        <h4 class="card-title">Gestionnaire de mots de passe</h4></a>
+                        <h3 class="card-title">Gestionnaire de mots de passe</h3></a>
                     <p class="card-text">Application de gestion et génération de mots de passe en local encryptés</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
+                    <img src="{{ url_for('static', filename='img/python.png') }}" alt="python" title="python"/>
                   </div>
               </div>
             </div>
@@ -191,14 +192,15 @@
                   <img src="{{ url_for('static', filename='img/finapps.png')}}" class="card-img-top" alt="finapps"></a>
                 <div class="card-body">
                     <a href="https://finapps.pythonanywhere.com/" target="_blank">
-                    <h4 class="card-title">Finapps</h4></a>
-                    <p class="card-text">Exemple de portefeuille boursiers</p>
+                    <h3 class="card-title">Finapps</h3></a>
+                    <p class="card-text">Exemple de suivi et de gestion d'un portefeuille boursier</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python"/>
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python" title="python"/>
+                      <img src="{{ url_for('static', filename='img/django.svg')}}" alt="django" title="django"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
               </div>
             </div>
@@ -210,13 +212,13 @@
                   <img src="{{ url_for('static', filename='img/etch.png')}}" class="card-img-top" alt="etch"></a>
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
-                        <h4 class="card-title">Etch a Sketch!</h4></a>
+                        <h3 class="card-title">Etch a Sketch!</h3></a>
                     <p class="card-text">Version web du jeu de l'écran magique</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
               </div>
             </div>
@@ -228,13 +230,13 @@
                   <img src="{{ url_for('static', filename='img/calculator.png')}}" class="card-img-top" alt="calculator"></a>
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
-                        <h4 class="card-title">Calculatrice</h4></a>
+                        <h3 class="card-title">Calculatrice</h3></a>
                     <p class="card-text">Calculatrice en ligne</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
               </div>
             </div>
@@ -246,13 +248,13 @@
                   <img src="{{ url_for('static', filename='img/tic.png')}}" class="card-img-top" alt="tic-tac-toe"></a>
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
-                    <h4 class="card-title">Tic Tac Toe</h4></a>
-                    <p class="card-text">Jeu Tic Tac Toe en JS pour 2 joueurs</p>
+                    <h3 class="card-title">Tic Tac Toe</h3></a>
+                    <p class="card-text">Jeu Tic Tac Toe pour 2 joueurs</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
                   </div>
               </div>
             </div>
