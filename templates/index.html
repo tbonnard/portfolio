@@ -36,12 +36,14 @@
             <div class="col-lg-6">
                 <h1>Bonjour! Je suis Thibaud,</h1>
                 <h3>développeur de logiciels web<br>et anciennement analyste d'affaires/fonctionnel web et CRM</h3>
+                <div>
+                  <img class='avatar' src="{{ url_for('static', filename='img/avatar.svg')}}" alt="Thibaud Bonnard">
+                </div>
                 <a href="#projets" type="button" class="btn btn-md redirect_button">Voir les projets</a>
                 <a href="#contact" type="button" class="btn btn-light btn-md redirect_button_b">Me contacter</a>
             </div>
-            <div class="col-lg-6">
-                <img class='avatar' src="{{ url_for('static', filename='img/avatar.svg')}}" alt="Thibaud Bonnard">
-            </div>
+            <!-- <div class="col-lg-6">
+            </div> -->
         </div>
 
         <div class="scroll_down">
@@ -59,9 +61,10 @@
 <section id='about'>
   <div class="container-fluid">
     <h2 class="section_heading">À propos de moi</h2>
-    <p>Travaillant depuis plus de 10 ans sur des projets numériques en tant qu'analyste d'affaires et fonctionnel, mais aimant la compréhension d'une fonctionnalité, sa logique ou encore la reflexion d'une solution optimale, j'ai toujours voulu passer du côté développement.
+    <p>Tout en travaillant sur des projets numériques en tant qu'analyste d'affaires et fonctionnel depuis plus de 10 ans,
+      le développement a toujours éte une compétence que je voulais développer.
       <br>
-      J’ai ainsi suivi des formations en computer science, python et JavaScript et suis actuellement disponible à vous rejoindre!</p>
+      J’ai ainsi suivi des formations en Python, JavaScript et HTML/CSS et suis actuellement disponible à vous rejoindre!</p>
   </div>
 </section>
 
@@ -76,27 +79,27 @@
     <div class="row presentation">
 
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
-          <p>Python (Flask / Django)</p>
+          <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
+          <p>Python</p>
         </div>
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
-          <p>Javascript</p>
+          <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="JavaScript" title="JavaScript"/>
+          <p>JavaScript</p>
         </div>
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/git.png')}}" alt="git" title="git"/>
+          <img src="{{ url_for('static', filename='img/git.png')}}" alt="Git" title="Git"/>
           <p>Git / GitHub</p>
         </div>
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/html5.png')}}" alt="html5" title="hmlt5"/>
+          <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
           <p>HTML5</p>
         </div>
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+          <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
           <p>CSS3</p>
         </div>
         <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/database.png')}}" alt="sql" title="sql"/>
+          <img src="{{ url_for('static', filename='img/database.png')}}" alt="SQL" title="SQL"/>
           <p>SQL</p>
         </div>
     </div>
@@ -121,15 +124,17 @@
                 <img src="{{ url_for('static', filename='img/tracker.png')}}" class="card-img-top" alt="tracker"></a>
               <div class="card-body">
                   <a href="https://blog-thib.herokuapp.com" target="_blank">
-                 <h3 class="card-title">Tracker de prix Amazon</h3>
-                  </a>
-                  <p class="card-text">Recevoir une notification si le prix d'un produit descend sous prix fixé par l'utilisateur</p>
+                 <h3 class="card-title">Tracker de prix Amazon</h3></a>
+                  <p class="card-text">Alerte de prix pour ses produits voulus</p>
               </div>
                 <div class="tech_icons">
-                  <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
-                  <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="flask" title="flask"/>
-                  <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                  <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                  <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
+                  <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="Flask" title="Flask"/>
+                  <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                  <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                </div>
+                <div class="github_portf">
+                  <a href="https://github.com/tbonnard/amazon_tracker_price" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
           </div>
@@ -140,15 +145,17 @@
                   <img src="{{ url_for('static', filename='img/blog.png')}}" class="card-img-top" alt="blog"></a>
                 <div class="card-body">
                     <a href="https://blog-thib.herokuapp.com" target="_blank">
-                   <h3 class="card-title">Blog</h3>
-                    </a>
-                    <p class="card-text">Exemple d'un blog crée avec Flask</p>
+                   <h3 class="card-title">Blog</h3></a>
+                    <p class="card-text">Blog et sa gestion</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/python.png')}}" alt="python" title="python"/>
+                    <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
                     <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="flask" title="flask"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/flask_auth_blog" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
             </div>
@@ -160,12 +167,15 @@
                 <div class="card-body">
                     <a href="https://finapps.pythonanywhere.com/" target="_blank">
                     <h3 class="card-title">To Do app</h3></a>
-                    <p class="card-text">Application web listant ses To Dos, en local, par projets</p>
+                    <p class="card-text">Suivi de ses to do par projets, en local</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="JavaScript" title="JavaScript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/todo" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -178,10 +188,13 @@
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
                         <h3 class="card-title">Gestionnaire de mots de passe</h3></a>
-                    <p class="card-text">Application de gestion et génération de mots de passe en local encryptés</p>
+                    <p class="card-text">Gestion et génération de mots de passe en local encryptés</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/python.png') }}" alt="python" title="python"/>
+                    <img src="{{ url_for('static', filename='img/python.png') }}" alt="Python" title="Python"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/password_manager" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -192,15 +205,18 @@
                   <img src="{{ url_for('static', filename='img/finapps.png')}}" class="card-img-top" alt="finapps"></a>
                 <div class="card-body">
                     <a href="https://finapps.pythonanywhere.com/" target="_blank">
-                    <h3 class="card-title">Finapps</h3></a>
-                    <p class="card-text">Exemple de suivi et de gestion d'un portefeuille boursier</p>
+                    <h3 class="card-title">FinApp</h3></a>
+                    <p class="card-text">Achat/vente d'actions boursières et suivi de son portefeuille</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="python" title="python"/>
-                      <img src="{{ url_for('static', filename='img/django.svg')}}" alt="django" title="django"/>
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                      <img src="{{ url_for('static', filename='img/python.png') }}" alt="Python" title="Python"/>
+                      <img src="{{ url_for('static', filename='img/django.svg')}}" alt="Django" title="Django"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="JavaScript" title="JavaScript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/finance_app" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -208,7 +224,7 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
-                  <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
+                  <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
                   <img src="{{ url_for('static', filename='img/etch.png')}}" class="card-img-top" alt="etch"></a>
                 <div class="card-body">
                     <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
@@ -216,9 +232,12 @@
                     <p class="card-text">Version web du jeu de l'écran magique</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="JavaScript" title="JavaScript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/Etch_a_sketch" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -234,9 +253,12 @@
                     <p class="card-text">Calculatrice en ligne</p>
                 </div>
                   <div class="tech_icons">
-                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="javascript" title="javascript"/>
-                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                    <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="JavaScript" title="JavaScript"/>
+                    <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                    <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/Calculator" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -252,9 +274,12 @@
                     <p class="card-text">Jeu Tic Tac Toe pour 2 joueurs</p>
                 </div>
                   <div class="tech_icons">
-                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="javascript" title="javascript"/>
-                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="hmlt5" title="hmlt5"/>
-                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="css3" title="css3"/>
+                      <img src="{{ url_for('static', filename='img/javascript.png') }}" alt="JavaScript" title="JavaScript"/>
+                      <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
+                      <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
+                  </div>
+                  <div class="github_portf">
+                    <a href="https://github.com/tbonnard/tic_tac_toe" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
             </div>
@@ -298,7 +323,7 @@
   <!-- Footer -->
 
   <footer id="footer">
-      <p class="footer_text">Fait par Thibaud Bonnard</p>
+      <p class="footer_text">Fait par Thibaud</p>
   </footer>
 
 {% endblock %}
