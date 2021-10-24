@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  line-height: 1.7;
+  line-height: 1.5;
   font-size: 1.5rem;
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 .container-fluid {
-  padding: 5% 14%;
+  padding: 6% 14%;
 }
 
 .section_heading {
@@ -96,8 +96,8 @@ p {
 .avatar {
   position: absolute;
   border-radius: 50%;
-  width: 16%;
-  right: 4%;
+  width: 22%;
+  right: 1%;
   top:10%;
 }
 
@@ -180,6 +180,7 @@ p {
 
 .tech_images img {
   width: 20%;
+  margin-bottom: 10px;
 }
 
 .tech_images:hover {
@@ -196,6 +197,7 @@ p {
 
 .card {
     border: none;
+    text-align: center;
 }
 
 .tech_icons {
@@ -212,9 +214,17 @@ p {
   transform: scale(1.1);
 }
 
+.card-body {
+  margin-top: 10px;
+}
+
 .card-body a {
   color: var(--dark_color_theme);
   text-decoration: none;
+}
+
+.card-body p {
+  line-height: 1.6;
 }
 
 .card-body a:hover {
@@ -283,18 +293,18 @@ input, textarea {
 /* Media query */
 @media (max-width: 1500px) {
   .avatar{
-    width: 18%;
-    right: 6%;
-    top:20%;
+    width: 22%;
+    right: 2%;
+    top:15%;
   }
 }
 
 
-@media (min-widht: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .avatar{
-    width: 20%;
-    right: 8%;
-    top:30%;
+    width: 24%;
+    right: 4%;
+    top:20%;
   }
 }
 
@@ -302,6 +312,10 @@ input, textarea {
 
   body {
     text-align: center;
+  }
+
+  .navbar {
+    margin-bottom: 75px;
   }
 
   .navbar-nav {
@@ -312,9 +326,10 @@ input, textarea {
   .avatar{
     position: static;
     /* transform:rotate(0deg); */
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 40px;
+    margin-bottom: 20px;
   }
 
   .scroll_down {
@@ -336,10 +351,15 @@ input, textarea {
 }
 
 
-@media (min-widht: 451px) and (max-width: 610px) {
+@media (max-width: 610px) {
   .scroll_down {
     right: 48.5%;
     padding-top: 6%;
+  }
+  .avatar{
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
 
