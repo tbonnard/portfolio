@@ -14,15 +14,18 @@ Bootstrap(app)
 
 my_email = os.environ.get('my_email')
 to_email = os.environ.get('to_email')
-pwd = os.environ.get('pwd')
+pwd = os.environ.get('password_gm')
 
 
 def send_email(name, message):
+    print(f"my email : {my_email}")
+    print(f"to email: {to_email}")
+    print(f"my pass: {pwd}")
     message_to_send = f"Subject:Portfolio: message de {name}! \n\n{message}"
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=pwd)
-        connection.sendmail(from_addr=my_email, to_addrs=to_email, msg=message_to_send)
+        connection.sendmail(from_addr=my_email, to_addrs=to_email, msg=message_to_send.encode(encoding='UTF-8'))
 
 
 class ContactForm(FlaskForm):
