@@ -18,9 +18,9 @@ pwd = os.environ.get('password_gm')
 
 
 def send_email(name, message):
-    print(f"my email : {my_email}")
-    print(f"to email: {to_email}")
-    print(f"my pass: {pwd}")
+    #print(f"my email : {my_email}")
+    #print(f"to email: {to_email}")
+    #print(f"my pass: {pwd}")
     message_to_send = f"Subject:Portfolio: message de {name}! \n\n{message}"
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
