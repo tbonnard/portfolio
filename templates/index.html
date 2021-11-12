@@ -81,6 +81,10 @@
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
           <p>Python</p>
+          <div class="tech_icons_tech">
+            <img src="{{ url_for('static', filename='img/django.svg')}}" alt="Django" title="Django"/>
+            <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="Flask" title="Flask"/>
+          </div>
         </div>
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="JavaScript" title="JavaScript"/>
@@ -120,11 +124,11 @@
 
           <div class="col-lg-4 col-md-6 project_item">
             <div class="card">
+              <a class="card-title" href="https://ecom-platform.herokuapp.com/" target="_blank">
+             <h3>Site e-commerce</h3></a>
                 <a href="https://ecom-platform.herokuapp.com/" target="_blank">
                 <img src="{{ url_for('static', filename='img/ecom.png')}}" class="card-img-top" alt="e-com"></a>
               <div class="card-body">
-                  <a href="https://ecom-platform.herokuapp.com/" target="_blank">
-                 <h3 class="card-title">Site e-commerce</h3></a>
                   <p class="card-text">e-com avec intégration StripeAPI et de sa plateforme Admin</p>
               </div>
                 <div class="tech_icons">
@@ -135,6 +139,7 @@
                   <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                 </div>
                 <div class="github_portf">
+                  <p>voir le code source</p>
                   <a href="https://github.com/tbonnard/ecom_and_admin_inventory" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
@@ -142,11 +147,11 @@
 
           <div class="col-lg-4 col-md-6 project_item">
             <div class="card">
+              <a class="card-title" href="https://ecom-platform.herokuapp.com/admin" target="_blank">
+             <h3 >Gestion d'inventaire</h3></a>
                 <a href="https://ecom-platform.herokuapp.com/admin" target="_blank">
                 <img src="{{ url_for('static', filename='img/admin_inventory.png')}}" class="card-img-top" alt="admin inventory"></a>
               <div class="card-body">
-                  <a href="https://ecom-platform.herokuapp.com/admin" target="_blank">
-                 <h3 class="card-title">Gestion d'inventaire</h3></a>
                   <p class="card-text">Plateform Admin du site e-com pour gérer les produits/voir les transactions</p>
               </div>
                 <div class="tech_icons">
@@ -157,6 +162,7 @@
                   <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                 </div>
                 <div class="github_portf">
+                  <p>voir le code source</p>
                   <a href="https://github.com/tbonnard/ecom_and_admin_inventory" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
@@ -165,11 +171,11 @@
 
           <div class="col-lg-4 col-md-6 project_item">
             <div class="card">
+              <a class="card-title" href="https://finapps.pythonanywhere.com/" target="_blank">
+              <h3>FinApp</h3></a>
                 <a href="https://finapps.pythonanywhere.com/" target="_blank">
                 <img src="{{ url_for('static', filename='img/finapps.png')}}" class="card-img-top" alt="finapps"></a>
               <div class="card-body">
-                  <a href="https://finapps.pythonanywhere.com/" target="_blank">
-                  <h3 class="card-title">FinApp</h3></a>
                   <p class="card-text">Achat/vente d'actions et suivi de son portefeuille</p>
               </div>
                 <div class="tech_icons">
@@ -180,6 +186,7 @@
                     <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                 </div>
                 <div class="github_portf">
+                  <p>voir le code source</p>
                   <a href="https://github.com/tbonnard/finance_app" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -188,11 +195,11 @@
 
           <div class="col-lg-4 col-md-6 project_item">
             <div class="card">
+              <a class="card-title" href="https://amztrackerprice.herokuapp.com/" target="_blank">
+             <h3>Tracker de prix Amazon</h3></a>
                 <a href="https://amztrackerprice.herokuapp.com/" target="_blank">
                 <img src="{{ url_for('static', filename='img/tracker.png')}}" class="card-img-top" alt="tracker"></a>
               <div class="card-body">
-                  <a href="https://amztrackerprice.herokuapp.com/" target="_blank">
-                 <h3 class="card-title">Tracker de prix Amazon</h3></a>
                   <p class="card-text">Alerte de prix pour ses produits voulus</p>
               </div>
                 <div class="tech_icons">
@@ -202,6 +209,7 @@
                   <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                 </div>
                 <div class="github_portf">
+                  <p>voir le code source</p>
                   <a href="https://github.com/tbonnard/amazon_tracker_price" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
@@ -210,11 +218,11 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+                <a class="card-title" href="https://tbonnard.github.io/todo/" target="_blank">
+                <h3>To Do app</h3></a>
                   <a href="https://tbonnard.github.io/todo/" target="_blank">
                   <img src="{{ url_for('static', filename='img/todo.png')}}" class="card-img-top" alt="todo"></a>
                 <div class="card-body">
-                    <a href="https://tbonnard.github.io/todo/" target="_blank">
-                    <h3 class="card-title">To Do app</h3></a>
                     <p class="card-text">Suivi de ses to do par projets, en local</p>
                 </div>
                   <div class="tech_icons">
@@ -223,6 +231,7 @@
                       <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                   </div>
                   <div class="github_portf">
+                    <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/todo" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
@@ -231,17 +240,18 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+                <a class="card-title" href="https://github.com/tbonnard/password_manager" target="_blank">
+                  <h3>Gestionnaire de mots de passe</h3></a>
                   <a href="https://github.com/tbonnard/password_manager" target="_blank">
                   <img src="{{ url_for('static', filename='img/pwd.png')}}" class="card-img-top" alt="password"></a>
                 <div class="card-body">
-                    <a href="https://github.com/tbonnard/password_manager" target="_blank">
-                        <h3 class="card-title">Gestionnaire de mots de passe</h3></a>
                     <p class="card-text">Gestion et génération de mots de passe en local encryptés</p>
                 </div>
                   <div class="tech_icons">
                     <img src="{{ url_for('static', filename='img/python.png') }}" alt="Python" title="Python"/>
                   </div>
                   <div class="github_portf">
+                    <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/password_manager" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
@@ -249,11 +259,11 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+                <a class="card-title" href="https://blog-thib.herokuapp.com" target="_blank">
+               <h3>Blog</h3></a>
                   <a href="https://blog-thib.herokuapp.com" target="_blank">
                   <img src="{{ url_for('static', filename='img/blog.png')}}" class="card-img-top" alt="blog"></a>
                 <div class="card-body">
-                    <a href="https://blog-thib.herokuapp.com" target="_blank">
-                   <h3 class="card-title">Blog</h3></a>
                     <p class="card-text">Blog et sa gestion</p>
                 </div>
                   <div class="tech_icons">
@@ -263,6 +273,7 @@
                     <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                   </div>
                   <div class="github_portf">
+                    <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/flask_auth_blog" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
                 </div>
@@ -272,11 +283,11 @@
 <!--
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+              <a class="card-title" href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
+                  <h3>Etch a Sketch!</h3></a>
                   <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
                   <img src="{{ url_for('static', filename='img/etch.png')}}" class="card-img-top" alt="etch"></a>
                 <div class="card-body">
-                    <a href="https://tbonnard.github.io/Etch_a_sketch/" target="_blank">
-                        <h3 class="card-title">Etch a Sketch!</h3></a>
                     <p class="card-text">Version web du jeu de l'écran magique</p>
                 </div>
                   <div class="tech_icons">
@@ -285,6 +296,7 @@
                     <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                   </div>
                   <div class="github_portf">
+                  <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/Etch_a_sketch" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
@@ -293,11 +305,11 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+              <a class="card-title" href="https://tbonnard.github.io/Calculator/" target="_blank">
+                  <h3 >Calculatrice</h3></a>
                   <a href="https://tbonnard.github.io/Calculator/" target="_blank">
                   <img src="{{ url_for('static', filename='img/calculator.png')}}" class="card-img-top" alt="calculator"></a>
                 <div class="card-body">
-                    <a href="https://tbonnard.github.io/Calculator/" target="_blank">
-                        <h3 class="card-title">Calculatrice</h3></a>
                     <p class="card-text">Calculatrice en ligne</p>
                 </div>
                   <div class="tech_icons">
@@ -306,6 +318,7 @@
                     <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                   </div>
                   <div class="github_portf">
+                  <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/Calculator" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>
@@ -314,11 +327,11 @@
 
             <div class="col-lg-4 col-md-6 project_item">
               <div class="card">
+              <a class="card-title" href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
+              <h3>Tic Tac Toe</h3></a>
                   <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
                   <img src="{{ url_for('static', filename='img/tic.png')}}" class="card-img-top" alt="tic-tac-toe"></a>
                 <div class="card-body">
-                    <a href="https://tbonnard.github.io/tic_tac_toe/" target="_blank">
-                    <h3 class="card-title">Tic Tac Toe</h3></a>
                     <p class="card-text">Jeu Tic Tac Toe pour 2 joueurs</p>
                 </div>
                   <div class="tech_icons">
@@ -327,6 +340,7 @@
                       <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
                   </div>
                   <div class="github_portf">
+                  <p>voir le code source</p>
                     <a href="https://github.com/tbonnard/tic_tac_toe" target="_blank"><i class="fab fa-github"></i></a>
                   </div>
               </div>

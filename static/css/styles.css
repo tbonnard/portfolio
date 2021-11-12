@@ -175,6 +175,7 @@ p {
 
 .tech_images p {
   text-align: center;
+  margin-bottom: 0;
 }
 
 
@@ -200,6 +201,16 @@ p {
     text-align: center;
 }
 
+
+.tech_icons_tech {
+  padding: 1% 4%;
+}
+
+.tech_icons_tech img {
+  width: 17%;
+  padding: 0 2%;
+}
+
 .tech_icons {
   padding: 2% 4%;
 }
@@ -218,7 +229,7 @@ p {
   margin-top: 10px;
 }
 
-.card-body a {
+.card-body a, .card-title {
   color: var(--dark_color_theme);
   text-decoration: none;
 }
@@ -228,17 +239,26 @@ p {
   text-align: center;
 }
 
-.card-body a:hover {
+.card-body a:hover, .card-title:hover {
   color: var(--standard_text);
 }
 
+.github_portf {
+  margin-top: 2%;
+}
+
+.github_portf p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
 .github_portf i {
-    margin-top: 10px;
+    margin-top: 5px;
     color: black;
 }
 
 .github_portf i:hover {
-    margin-top: 10px;
     color: var(--standard_text);
 }
 
