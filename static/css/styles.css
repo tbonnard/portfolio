@@ -197,8 +197,11 @@ p {
 }
 
 .card {
-    border: none;
+    /* border: none; */
     text-align: center;
+    border: 1px solid rgb(120 153 220 / 5%);
+    border-radius: 1rem;
+    padding:5%;
 }
 
 
