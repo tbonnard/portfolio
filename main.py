@@ -22,7 +22,7 @@ def send_email(name, message):
     #print(f"to email: {to_email}")
     #print(f"my pass: {pwd}")
     message_to_send = f"Subject:Portfolio: message de {name}! \n\n{message}"
-    with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
+    with smtplib.SMTP("smtp-relay.sendinblue.com", port=587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=pwd)
         connection.sendmail(from_addr=my_email, to_addrs=to_email, msg=message_to_send.encode(encoding='UTF-8'))
@@ -41,8 +41,12 @@ def home():
     if form.validate_on_submit():
         name = form.name.data
         message = f'Message recu de "{name}" ({form.email.data}) \n\n "{form.message.data}"'
-        send_email(name, message)
-        return redirect(url_for('thank_you'))
+        try:
+            send_email(name, message)
+        except:
+            return redirect(url_for('home'))
+        else:
+            return redirect(url_for('thank_you'))
     return render_template('index.html', form=form)
 
 
