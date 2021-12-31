@@ -15,14 +15,14 @@ Bootstrap(app)
 my_email = os.environ.get('my_email')
 to_email = os.environ.get('to_email')
 smtp_url = os.environ.get('smtp_url')
-user_stmp = os.environ.get('user_stmp')
-pwd_stmp = os.environ.get('pwd_stmp')
+user_smtp = os.environ.get('user_smtp')
+pwd_smtp = os.environ.get('pwd_smtp')
 
 
 def send_email(name, message):
     message_to_send = f"Subject:Portfolio: message de {name}! \n\n{message}"
     with smtplib.SMTP(smtp_url, port=587) as connection:
-        connection.login(user=user_stmp, password=pwd_stmp)
+        connection.login(user=user_smtp, password=pwd_smtp)
         connection.sendmail(from_addr=my_email, to_addrs=to_email, msg=message_to_send.encode(encoding='UTF-8'))
 
 
@@ -39,13 +39,12 @@ def home():
     if form.validate_on_submit():
         name = form.name.data
         message = f'Message recu de "{name}" ({form.email.data}) \n\n "{form.message.data}"'
-        send_email(name, message)
-        # try:
-        #     send_email(name, message)
-        # except:
-        #     return redirect(url_for('home'))
-        # else:
-        #     return redirect(url_for('thank_you'))
+        try:
+            send_email(name, message)
+        except:
+            return redirect(url_for('home'))
+        else:
+            return redirect(url_for('thank_you'))
     return render_template('index.html', form=form)
 
 
