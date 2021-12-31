@@ -39,12 +39,13 @@ def home():
     if form.validate_on_submit():
         name = form.name.data
         message = f'Message recu de "{name}" ({form.email.data}) \n\n "{form.message.data}"'
-        try:
-            send_email(name, message)
-        except:
-            return redirect(url_for('home'))
-        else:
-            return redirect(url_for('thank_you'))
+        send_email(name, message)
+        # try:
+        #     send_email(name, message)
+        # except:
+        #     return redirect(url_for('home'))
+        # else:
+        #     return redirect(url_for('thank_you'))
     return render_template('index.html', form=form)
 
 
