@@ -14,13 +14,16 @@ Bootstrap(app)
 
 my_email = os.environ.get('my_email')
 to_email = os.environ.get('to_email')
-pwd = os.environ.get('password_gm')
+smtp_url = os.environ.get('smtp_url')
+user_stmp = os.environ.get('user_stmp')
+pwd_stmp = os.environ.get('pwd_stmp')
+port_stmp = os.environ.get('port_stmp')
 
 
 def send_email(name, message):
     message_to_send = f"Subject:Portfolio: message de {name}! \n\n{message}"
-    with smtplib.SMTP("smtp-relay.sendinblue.com", port=587) as connection:
-        connection.login(user=my_email, password=pwd)
+    with smtplib.SMTP(smtp_url, port=port_stmp) as connection:
+        connection.login(user=user_stmp, password=pwd_stmp)
         connection.sendmail(from_addr=my_email, to_addrs=to_email, msg=message_to_send.encode(encoding='UTF-8'))
 
 
