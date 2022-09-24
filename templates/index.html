@@ -77,16 +77,8 @@
     <div class="container-fluid">
         <h2 class="section_heading">Technologies</h2>
 
-    <div class="row presentation">
+      <div class="row presentation">
 
-        <div class="col-md-4 col-6 tech_images">
-          <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
-          <p>Python</p>
-          <div class="tech_icons_tech">
-            <img src="{{ url_for('static', filename='img/django.svg')}}" alt="Django" title="Django"/>
-            <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="Flask" title="Flask"/>
-          </div>
-        </div>
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/javascript.png')}}" alt="JavaScript" title="JavaScript"/>
           <p>JavaScript</p>
@@ -96,23 +88,37 @@
             <img src="{{ url_for('static', filename='img/nodeexpressjs.svg')}}" alt="Node.js" title="Node.js"/>
           </div>
         </div>
+
+        <div class="col-md-4 col-6 tech_images">
+          <img src="{{ url_for('static', filename='img/python.png')}}" alt="Python" title="Python"/>
+          <p>Python</p>
+          <div class="tech_icons_tech">
+            <img src="{{ url_for('static', filename='img/django.svg')}}" alt="Django" title="Django"/>
+            <img src="{{ url_for('static', filename='img/flask.svg')}}" alt="Flask" title="Flask"/>
+          </div>
+        </div>
+
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/git.png')}}" alt="Git" title="Git"/>
           <p>Git / GitHub</p>
         </div>
+
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/html5.png')}}" alt="HTML5" title="HTML5"/>
           <p>HTML5</p>
         </div>
+
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/css3.png')}}" alt="CSS3" title="CSS3"/>
           <p>CSS3</p>
         </div>
+
         <div class="col-md-4 col-6 tech_images">
           <img src="{{ url_for('static', filename='img/database.png')}}" alt="SQL" title="SQL"/>
           <p>Relationelle / Document</p>
         </div>
-    </div>
+        
+      </div>
 
     </div>
   </section>
