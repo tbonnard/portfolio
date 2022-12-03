@@ -4,12 +4,10 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email
 from wtforms.fields.html5 import EmailField
 import smtplib
-from flask_bootstrap import Bootstrap
 import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-Bootstrap(app)
 
 
 my_email = os.environ.get('my_email')

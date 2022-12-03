@@ -35,18 +35,12 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
 p {
   line-height: 2;
   font-size: 1.1rem;
-  text-align: justify;
 }
 
-.container-fluid {
+.globalContainer {
   padding: 5% 14%;
 }
 
@@ -61,28 +55,50 @@ p {
   padding: 2% 14% 2%;
 }
 
-.navbar-brand{
-    font-size: 2rem;
-    font-weight: bold;
+
+.navbarExpand{
+  display: flex;
+  flex-direction:row;
+  float: right;
 }
 
-.navbar-toggler {
+.navbarExpand li {
+    list-style-type: none;
+}
+
+.navbarToggle {
   position: relative;
   top: 25px;
   left: 95%;
+  border: none;
+  display:none;
+ }
+
+.navbarToggleIcon{
+    width: 2em;
+    height: 2em;
+    cursor:pointer;
 }
 
 .nav-item {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
 }
 
-.navbar-toggler {
-  border: none;
+.nav-item a{
+  text-decoration:none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+   color:rgba(0,0,0,.55);
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus,
+
+.nav-item a:hover{
+    color: rgba(0,0,0,.7);
+}
+
+
+.navbar-toggle:focus,
+.navbar-toggle:active,
+.navbar-toggle-icon:focus,
  input:focus, input:active,
  textarea:focus, textarea:active {
     outline: none;
@@ -92,6 +108,31 @@ p {
 .presentation {
   position: relative;
 }
+
+.leftSection{
+    width:60%;
+}
+
+.sectionContainer{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+.bouton {
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 
 .avatar {
   position: absolute;
@@ -162,8 +203,10 @@ p {
 
 
 /* about */
-
-
+.aboutIntro{
+    font-size:26px;
+    line-height:2rem;
+}
 
 
 
@@ -171,6 +214,8 @@ p {
 .tech_images {
   padding: 0 0 2% 0;
   text-align: center;
+  width:300px;
+  margin: 0 auto;
 }
 
 .tech_images p {
@@ -180,7 +225,6 @@ p {
 
 
 .tech_images img {
-  width: 20%;
   margin-bottom: 10px;
 }
 
@@ -194,6 +238,8 @@ p {
 /* projects */
 .project_item {
   padding: 0px 30px 40px 30px;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .card {
@@ -203,6 +249,7 @@ p {
     border-radius: 1rem;
     padding:5%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
 }
 
 .tag_icon_div{
@@ -226,6 +273,7 @@ p {
 
 .tech_icons_tech {
   padding: 1% 4%;
+    margin: 0 auto;
 }
 
 .tech_icons_tech img {
@@ -246,6 +294,7 @@ p {
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
   filter: grayscale(100%);
+  width:100%;
 }
 
 .card-img-top:hover{
@@ -303,7 +352,13 @@ p {
   background-color: var(--light_color_theme);
 }
 
+.textContact {
+    width: 33.33333333%;
+}
 
+.formContact{
+    width: 60%;
+}
 
 input, textarea {
     width: 100%;
@@ -311,6 +366,8 @@ input, textarea {
     padding:10px 0 10px 10px;
     border: 1px solid var(--dark_color_theme);
     border-radius: 5px;
+    font-family:inherit;
+    font-size:16px;
 }
 
 .submit_button input {
@@ -321,6 +378,7 @@ input, textarea {
   background-color: var(--dark_color_theme);
   color: #fff;
   margin-left: 10px;
+  cursor:pointer;
 }
 
 .submit_button input:hover{
@@ -379,13 +437,35 @@ input, textarea {
   }
 
   .navbar {
-    margin-bottom: 75px;
+    margin-bottom: 0px;
   }
 
-  .navbar-nav {
-      margin:0 auto;
-      display: block;
+    .navbarToggle{
+        display:block;
+        left: 50%;
+    }
+
+  .navbarExpandGlobal {
+      display: none;
+      flex-direction:column;
+      float:none;
   }
+
+    .navbarExpand{
+      flex-direction:column;
+      float:none;
+            margin:0;
+        padding:0;
+    }
+
+    .nav-item{
+        margin:0;
+        padding:10px 0;
+    }
+
+    .globalContainer{
+    padding: 5% 14%;
+    }
 
   .avatar{
     position: static;
@@ -394,6 +474,10 @@ input, textarea {
     padding-top: 40px;
     margin-bottom: 20px;
   }
+
+   .leftSection {
+        width:100%;
+    }
 
   .scroll_down {
     right: 49%;
@@ -411,6 +495,19 @@ input, textarea {
   .submit_button input {
     margin-left: 0px;
   }
+
+  .contactContainer{
+    flex-direction:column;
+  }
+
+  .textContact, .formContact {
+    width:100%;
+  }
+
+    .textContact p {
+    text-align: justify;
+  }
+
 }
 
 
