@@ -412,6 +412,11 @@ input, textarea {
 }
 
 
+
+#thanks{
+    margin: 2% 3% 3% 0;
+}
+
 /* Media query */
 @media (max-width: 1500px) {
   .avatar{
