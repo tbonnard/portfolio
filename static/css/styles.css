@@ -212,9 +212,9 @@ p {
 
 /* Tehno */
 .tech_images {
-  padding: 0 0 2% 0;
+  padding: 0 0 6% 0;
   text-align: center;
-  width:300px;
+  width:250px;
   margin: 0 auto;
 }
 
@@ -225,12 +225,12 @@ p {
 
 
 .tech_images img {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .tech_images:hover {
   transition: 0.3s;
-  transform: translateY(-5%);
+  transform: translateY(-1%);
 }
 
 
@@ -310,6 +310,16 @@ p {
 .card-title {
   padding-top: 5%;
 }
+
+.titleCard{
+    color: var(--standard_text);
+    font-size:24px;
+}
+
+.titleCard:hover{
+    color: var(--dark_color_theme);
+}
+
 
 .card-body a, .card-title {
   color: var(--dark_color_theme);
@@ -514,6 +524,14 @@ input, textarea {
   }
 
 }
+
+
+@media (max-width: 710px) {
+ .tech_images {
+   padding: 0 0 10% 0;
+   }
+}
+
 
 
 @media (max-width: 610px) {
