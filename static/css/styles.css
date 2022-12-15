@@ -13,6 +13,8 @@ body {
   font-family: 'Karla', sans-serif;
   color: var(--standard_text);
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .title_color {
