@@ -644,11 +644,29 @@ input, textarea {
 
 }
 
+
+@media (max-width: 600px) {
+
+  .nameDivVisitor{
+    display: block;
+  }
+
+  .hiVisitor{
+    margin-bottom: 10px;
+  }
+
+
+}
+
 @media (max-width: 500px) {
 
   #timeline {
     width: 130%;
     left: -45%;
+  }
+
+  .hiVisitor{
+    margin-bottom: 10px;
   }
 
 }
