@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = '/api/'
+const baseUrl = 'https://tbonnard.pythonanywhere.com/api/'
 
 const loginUser = async credentials => {
     const response = await axios.post(`${baseUrl}login/`, credentials)

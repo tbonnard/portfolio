@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = '/api/'
+const baseUrl = 'https://tbonnard.pythonanywhere.com/api/'
 
 
 const createAccount = async (accountObject) => {

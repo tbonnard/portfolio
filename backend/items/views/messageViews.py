@@ -27,6 +27,6 @@ class MessageView(APIView):
             send_email(data['name'], data['message'], data['email'])
             return JsonResponse({'message': "sent"}, safe=False, status=status.HTTP_200_OK)
         except Exception as e:
-            return JsonResponse({'message': "error"}, safe=False, status=status.HTTP_400_BAD_REQUEST)
+            return JsonResponse({'message': f"error {e}"}, safe=False, status=status.HTTP_400_BAD_REQUEST)
 
 

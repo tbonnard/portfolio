@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = '/api/weather/'
+const baseUrl = 'https://tbonnard.pythonanywhere.com/api/weather/'
 
 const weatherUser = async (coords) => {
     const keyapi = process.env.REACT_APP_WEATHER_API_KEY

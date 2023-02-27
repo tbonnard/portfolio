@@ -5,7 +5,7 @@ const IntroGeneral = () => {
  
         return (
         <div className="introTextGeneral">
-            <p>Actuellement à la recherche d'un poste de developpeur junior fullstack, ce portfolio vous permet d'avoir une première idée sur mon profil !</p>
+            <p>Je souhaite évoluer vers un poste de développeur junior fullstack et continuer de monter en compétences suite à une solide expérience comme analyste d’affaires/fonctionnel TI Agile. Vous pouvez ainsi découvrir mon profil et quelques-unes de mes réalisations !</p>
         </div>
         )
     }

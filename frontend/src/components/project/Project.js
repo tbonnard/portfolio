@@ -5,6 +5,8 @@ import gif from '../../files/project/gif.png'
 import ecom from '../../files/project/ecom.png'
 import admin_inventory from '../../files/project/admin_inventory.png'
 import projapp from '../../files/project/projapp.png'
+import portfolio from '../../files/project/portfolio.png'
+
 
 import js from '../../files/techno/js.png'
 import python from '../../files/techno/python.png'
@@ -23,8 +25,31 @@ const Project = () => {
     
     return (
         <div id='portfolio' className="container">
-            <h2 className="titreSection">Projets</h2>
+            <h2 className="titreSection">portfolio</h2>
             <div className="projectGlobal">
+
+                <div className="projectItem">
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
+                        <a href="#">
+                        <img src={portfolio} alt='portfolio' title='portfolio'/>
+                        <div className="middle">
+                            <div className="textMiddle">Portfolio listant quelques projets personnels et leur github</div>
+                        </div>
+                        </a>
+                    </div>
+                    <div className="projectItemBottom">
+                        <p>Portfolio</p>
+                        <div className="tech_icons">
+                            <img src={react} alt="ReactJS" title="ReactJS"/>
+                            <img src={django} alt="django" title="django"/>
+                            <a href="https://github.com/tbonnard/portfolio" target="_blank">
+                                <img className="github_portf" src={github} alt="Github" title="Github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#eaf7f6"}}>
                         <a href="https://projapp.onrender.com/" target="_blank">
@@ -44,11 +69,10 @@ const Project = () => {
                                 <img className="github_portf" src={github} alt="Github" title="Github"/>
                             </a>
                         </div>
-            
                     </div>
-            </div>
+                </div>
 
-            <div className="projectItem">
+                <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#c7e9fd"}}>
                         <a href="https://playgif.onrender.com/" target="_blank">
                         <img src={gif} alt='gif' title='gif'/>
@@ -68,9 +92,9 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-            </div>
+                </div>
 
-            <div className="projectItem">
+                <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#f7f7f7"}}>
                         <a href="https://association.pythonanywhere.com/" target="_blank">
                         <img src={association} alt='ecom' title='ecom'/>
@@ -90,9 +114,9 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-            </div>
+                </div>
 
-            <div className="projectItem">
+                <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#fe436e"}}>
                         <a href="https://ecomplatform.pythonanywhere.com"  target="_blank">
                         <img src={ecom} alt='association' title='association'/>
@@ -112,9 +136,9 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-            </div>
+                </div>
 
-            <div className="projectItem">
+                <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#3f87bd"}}>
                         <a href="https://ecomplatform.pythonanywhere.com/admin" target="_blank">
                         <img src={admin_inventory} alt='admin_inventory' title='admin_inventory'/>
@@ -134,7 +158,7 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-            </div>
+                </div>
            </div>
         </div>
     )
