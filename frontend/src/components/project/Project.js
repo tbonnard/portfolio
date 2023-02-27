@@ -25,7 +25,7 @@ const Project = () => {
     
     return (
         <div id='portfolio' className="container">
-            <h2 className="titreSection">portfolio</h2>
+            <h2 className="titreSection">Projets</h2>
             <div className="projectGlobal">
 
                 <div className="projectItem">
