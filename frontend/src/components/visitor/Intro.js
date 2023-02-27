@@ -54,7 +54,7 @@ const Intro = () => {
     return (
         <div id='home' className="IntroDiv">
             <div className="nameDivVisitor">
-                <h1>Bonjour {visitor.name}</h1>
+                <h1 className="hiVisitor">Bonjour {visitor.name}</h1>
                 <img className="logoVisitor" src={visitor.logo} />
             </div>
             <div className="introText">
