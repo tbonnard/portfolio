@@ -14,7 +14,6 @@ from ..utils.validateUserPerm import validate_superuser
 # Create your views here.
 class VisitorView(APIView):
     def get(self, request):
-        print('hkhkj')
         queryset = Visitor.objects.all()
         if queryset is not None:
             serializer = VisitorSerializer(queryset, many=True)

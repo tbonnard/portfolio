@@ -12,13 +12,15 @@ def jwt_middleware(get_response):
 
     def middleware(request):
         # Define a list of URL patterns that don't require authentication
-        unauthenticated_urls = ['/api/getvisitor/', '/api/logout/', '/api/login/', '/api/register/', '/api/weather/', '/api/message/', '/api/get-csrf-token/']
+        unauthenticated_urls = ['/admin/','/api/getvisitor/', '/api/logout/', '/api/login/', '/api/register/', '/api/weather/', '/api/message/', '/api/get-csrf-token/']
 
         # Check if the request URL is in the unauthenticated URLs list
         if request.path in unauthenticated_urls:
             # Skip authentication check for unauthenticated URLs
             return get_response(request)
 
+        if request.path.startswith('/admin/'):
+            return get_response(request)
         if not request.META.get('HTTP_AUTHORIZATION') or len(request.META.get('HTTP_AUTHORIZATION')) < 8:
             return JsonResponse({'error': 'No Authorization header found'}, status=401)
 
