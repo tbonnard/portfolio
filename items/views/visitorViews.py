@@ -10,19 +10,16 @@ from ..serializers.visitorSerializer import VisitorSerializer
 from .authViews import validate_if_authenticated
 from ..utils.validateUserPerm import validate_superuser
 
+
 # Create your views here.
 class VisitorView(APIView):
-    # def get(self, request):
-    #     data_authenticated_user = validate_if_authenticated(request)
-    #     if data_authenticated_user['authenticated']:
-    #         # if validate_superuser(data_authenticated_user['user']):
-    #         queryset = Visitor.objects.all()
-    #         if queryset is not None:
-    #             serializer = VisitorSerializer(queryset, many=True)
-    #             return Response(serializer.data)
-    #         return Response('No data',status=status.HTTP_204_NO_CONTENT)
-    #         # return Response('Forbidden', status=status.HTTP_403_FORBIDDEN)
-    #     raise AuthenticationFailed('Unauthenticated')
+    def get(self, request):
+        print('hkhkj')
+        queryset = Visitor.objects.all()
+        if queryset is not None:
+            serializer = VisitorSerializer(queryset, many=True)
+            return Response(serializer.data)
+        return Response('No data',status=status.HTTP_204_NO_CONTENT)
 
     def post(self, request):
         #data_authenticated_user = validate_if_authenticated(request)
