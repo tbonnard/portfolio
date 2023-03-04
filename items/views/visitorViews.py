@@ -55,16 +55,13 @@ class VisitorDetailsView(APIView):
         return Response(serializer.data)
         # raise AuthenticationFailed('Unauthenticated')
 #
-#     def put(self, request, internal_id, format=None):
-#         data_authenticated_user = validate_if_authenticated(request)
-#         if data_authenticated_user['authenticated']:
-#             instance = self.get_object(internal_id)
-#             serializer = VisitorSerializer(instance, data=request.data)
-#             if serializer.is_valid():
-#                 serializer.save()
-#                 return Response(serializer.data)
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-#         raise AuthenticationFailed('Unauthenticated')
+    def put(self, request, format=None):
+        instance = self.get_object(request.data["internal_id"])
+        serializer = VisitorSerializer(instance, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 #
 #     def delete(self, request, internal_id, format=None):
 #         data_authenticated_user = validate_if_authenticated(request)
