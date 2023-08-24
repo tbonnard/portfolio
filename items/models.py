@@ -13,7 +13,7 @@ class User(AbstractUser):
     # REQUIRED_FIELDS = []
 
 
-def get_admin_user():
+def get_admin_user(self):
     return User.objects.filter(is_superuser=True).first()
 
 
