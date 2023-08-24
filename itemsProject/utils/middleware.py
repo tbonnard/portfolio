@@ -3,6 +3,8 @@ from django.contrib.auth import authenticate
 from django.http import JsonResponse
 from rest_framework.exceptions import AuthenticationFailed
 
+import os
+
 import jwt
 import re
 from items.models import User
@@ -26,7 +28,7 @@ def jwt_middleware(get_response):
 
         try:
             token = request.META['HTTP_AUTHORIZATION'].split(' ')[1]
-            SECRET_KEY = '78HIHDS768029jdkshfç76890'
+            SECRET_KEY_AUTH_APP = os.environ.get('SECRET_KEY_AUTH_APP')
             payload = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
             user_id = payload['id']
             user = User.objects.get(id=user_id)
